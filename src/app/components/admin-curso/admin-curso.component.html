@@ -1,0 +1,52 @@
+<!-- BEGIN panel -->
+<div class="container">
+    <form class="form p-t-20" 
+                        [formGroup]="registerForm"
+                        (submit)="crearCurso()">
+
+                    <div class="form-group">
+                        <label for="exampleInputuname">Titulo</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="ti-direction"></i></div>
+                            <input type="text"
+                                    class="form-control"
+                                    id="exampleInputuname"
+                                    placeholder="Nombre del usuario"
+                                    formControlName="titulo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Descripcion</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="ti-bookmark-alt"></i></div>
+                            <input type="text" 
+                                    class="form-control" 
+                                    id="exampleInputEmail1" 
+                                    placeholder="Descripcion"
+                                    formControlName="descripcion">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputAutor">Autor</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="ti-user"></i></div>
+                            <input type="text" 
+                                    class="form-control" 
+                                    id="exampleInputAutor" 
+                                    placeholder="Autor"
+                                    formControlName="autor">
+                        </div>
+                    </div>
+                    
+                    
+                    <button type="submit" 
+                            class="btn btn-success btn-block waves-effect waves-light m-r-10"
+                            >
+                        <i class="fa fa-save"></i>
+                        Guardar cambios
+                    </button>
+        </form>
+
+</div>
+<!-- END panel -->
